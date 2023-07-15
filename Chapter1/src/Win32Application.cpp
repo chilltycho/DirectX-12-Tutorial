@@ -79,6 +79,7 @@ LRESULT CALLBACK Win32Application::WindowProc(HWND hWnd, uint32_t message, WPARA
 
     switch (message)
     {
+    // 调用CreateWindowEx或CreateWindow函数发送该消息
     case WM_CREATE:
         {
             // Save the DXSample* passed in to CreateWindow.
@@ -100,7 +101,7 @@ LRESULT CALLBACK Win32Application::WindowProc(HWND hWnd, uint32_t message, WPARA
             pSample->OnKeyUp(static_cast<UINT8>(wParam));
         }
         return 0;
-
+    // 该消息执行显示信息所需绘图，由于必须更新窗口或显示请求更新时，系统向应用程序发送该消息
     case WM_PAINT:
         if (pSample)
         {

@@ -11,7 +11,7 @@
     "-j=24",
     "--log=error",
     "--completion-style=bundled",
-    "--background-index", 
+    "--background-index",
     "--header-insertion=never",
     "--pch-storage=memory",
     "--offset-encoding=utf-8"

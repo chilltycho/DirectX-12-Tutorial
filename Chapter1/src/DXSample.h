@@ -49,7 +49,7 @@ protected:
     // Viewport dimensions.
     uint32_t m_width;
     uint32_t m_height;
-    float m_aspectRatio;
+    float m_aspectRatio; // 宽高比
 
     // Adapter info.
     bool m_useWarpDevice;

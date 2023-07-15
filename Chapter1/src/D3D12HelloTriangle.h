@@ -37,8 +37,8 @@ private:
 	};
 
 	// Pipeline objects.
-	CD3DX12_VIEWPORT m_viewport;
-	CD3DX12_RECT m_scissorRect;
+	CD3DX12_VIEWPORT m_viewport; // 视口
+	CD3DX12_RECT m_scissorRect;  // 裁剪矩形
 	ComPtr<IDXGISwapChain3> m_swapChain;
 	ComPtr<ID3D12Device> m_device;
 	ComPtr<ID3D12Resource> m_renderTargets[FrameCount];
@@ -48,7 +48,7 @@ private:
 	ComPtr<ID3D12DescriptorHeap> m_rtvHeap;
 	ComPtr<ID3D12PipelineState> m_pipelineState;
 	ComPtr<ID3D12GraphicsCommandList> m_commandList;
-	uint32_t m_rtvDescriptorSize;
+	uint32_t m_rtvDescriptorSize; // rtv渲染目标视图资源
 
 	// App resources.
 	ComPtr<ID3D12Resource> m_vertexBuffer;

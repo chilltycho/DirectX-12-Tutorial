@@ -107,3 +107,5 @@ function BuildProject(config)
 	end
 end
 add_subdirs("src")
+
+
