@@ -119,7 +119,7 @@ void D3D12HelloTriangle::LoadPipeline() {
 			rtvHandle.Offset(1, m_rtvDescriptorSize);
 		}
 	}
-
+	
 	ThrowIfFailed(m_device->CreateCommandAllocator(D3D12_COMMAND_LIST_TYPE_DIRECT, IID_PPV_ARGS(&m_commandAllocator)));
 }
 
